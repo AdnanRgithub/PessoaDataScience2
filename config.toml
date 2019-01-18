@@ -5,6 +5,8 @@ theme = "hugo-theme-techdoc"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = []
+math = true
+
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
