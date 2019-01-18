@@ -1,5 +1,5 @@
 ---
-title: About
+title: 'About'
 ---
 
 This is a website overseen by Dr. Luiz Pessoa. It will discuss concepts in Data Science, Statistics, and fMRI related Research.
