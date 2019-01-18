@@ -23,6 +23,34 @@
   </url>
   
   <url>
+    <loc>/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/02-bootstrapping/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/04-finishing-submitting-a-paper-in-the-lab/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
@@ -31,6 +59,14 @@
     <loc>/</loc>
     <lastmod>2016-12-30T21:49:57-07:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/multiple-regression/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/permutation-testing/</loc>
   </url>
   
   <url>

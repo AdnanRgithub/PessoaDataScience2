@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;? - Data Science</title>
+<meta name="description" content="A website built through Hugo and blogdown.">
+<meta name="generator" content="Hugo 0.53" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="/js/functions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/jquery.backtothetop/jquery.backtothetop.min.js"></script></head>
+<body>
+<div class="container"><header>
+<h1>Data Science</h1>
+
+<p class="description">A website built through Hugo and blogdown.</p>
+
+</header>
+<div class="menu">
+<nav>
+<ul>
+<li><a href="/about/">About</a></li>
+<li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+<li><a href="https://twitter.com/rstudio">Twitter</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</h1>
+
+
+<div id="how-can-we-do-data-analysis-when-theres-no-ground-truth" class="section level1">
+<h1>How can we do data analysis when there’’s no “ground truth”?</h1>
+<p>We often investigate novel imaging datasets with sophisticated algorithms. These might be something that we just developed or some technique that exists in the literature and has been applied in other domains. In any case, it’s something that isn’t trivial and will involved quite a bit of data processing or manipulation.</p>
+<p>You get a new result, now what? Maybe the result makes some sense, or maybe it’s not entirely clear. Can you trust the results? If it the results make sense, should you trust the results?</p>
+<p>The answer is <strong>no, don’t trust it</strong> – yet.</p>
+<p>There are more ways to get something wrong than to get it right. So just because of this it will be quite possible that something went wrong. Not just in terms of programming but also <strong>conceptually</strong>. Maybe you thought what you were doing made sense, but it actually doesn’t and you haven’t realized it. Maybe it will take quite some time for you to understand <strong>your method</strong> more deeply.</p>
+<p>What to do?</p>
+<p>First, apply your method to something that is <strong>simple</strong> and that you believe you can interpret. Try to <strong>break</strong> your method to understand it better. Do this for a good while, by the way.</p>
+<p>Next, apply it to something that is <strong>not simple</strong> but that is well understood, or relatively well understood. Let me give you an example here. Suppose you want to study something novel and challenging, like our <code>emoprox I/II</code> data. You apply your algorithm and get some result. Maybe you don’t even have much experience with brain data, so interpreting will be quite hard. So, now apply it to <code>HCP data</code>, for example, which has been studied extensively in many different ways. So by usign this <strong>better understood</strong> dataset and now understanding your method a little better (and fixing any implementation and hopefully minor conceptual mistakes), you can now return to your original problem of interest.</p>
+<p>There’s still a <strong>lot to understand</strong> but at least now you know something about the variability of the measures that you’re using, how they might be distributed, and so on.</p>
+<p>A lot of research is done – obviously – without any <strong>ground truth</strong>. That is an immense challenge and even very skilled people technically struggle when studying new problems. That’s because both the data <strong>and</strong> their methods are not fully understood. This is a perfect recipe for things to go wrong, at least partly wrong. So one has to incrementally <strong>bootstrap</strong> one’s understanding of both the data and the method along the ways outlined here.</p>
+<p>Obviously, the example above is arbitrary (not entirely by the way). Maybe you are studying <code>HCP data</code> for the first time yourself with your method. So pick something simpler than <code>HCP</code> and apply the logic above. If you don’t know what data to pick, or it’s not obvious what could be used, an excellent choice is to <strong>create synthetic data</strong> yourself. You should contruct data with certain properties and understand how your method/measures behaves. Again, think of the distribution of results that you get; how do they vary? Synthetic data is seldom used, but it’s hugely useful. So think of how to structure your workflow so as to incorporate that in a more seamless manner.</p>
+<p>I’m going to stop here. There’s a lot more to discuss about this, but I wanted to post this simple version first. Maybe one day I’ll extend it based on questions or suggestions.</p>
+</div>
+<div class="edit-meta">Last updated on 1 Jan 0001 / Published on 1 Jan 0001<br></div><nav class="pagination"><a class="nav nav-prev" href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/" title="05-The beauty of programming via probability distributions (and estimating them)"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - 05-The beauty of programming via probability distributions (and estimating them)</a>
+<a class="nav nav-next" href="/1/01/01/multiple-regression/" title="Multiple regression">Next - Multiple regression <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+<nav>
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class="parent"><a href="/post/">Posts</a>
+<ul class="sub-menu">
+<li class=""><a href="/2016/12/30/a-plain-markdown-post/">A Plain Markdown Post</a></li>
+<li class=""><a href="/2015/07/23/hello-r-markdown/">Hello R Markdown</a></li>
+<li class=""><a href="/2015/01/01/lorem-ipsum/">Lorem Ipsum</a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/02-bootstrapping/">02-Bootstrapping</a></li>
+<li class=""><a href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/">04-Finishing/submitting a paper in the lab</a></li>
+<li class=""><a href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">05-The beauty of programming via probability distributions (and estimating them)</a></li>
+<li class="active"><a href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a></li>
+<li class=""><a href="/1/01/01/multiple-regression/">Multiple regression</a></li>
+<li class=""><a href="/1/01/01/permutation-testing/">Permutation Testing</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
