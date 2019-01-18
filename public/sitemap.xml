@@ -25,10 +25,6 @@
   </url>
   
   <url>
-    <loc>/1/01/01/02-bootstrapping/</loc>
-  </url>
-  
-  <url>
     <loc>/1/01/01/04-finishing-submitting-a-paper-in-the-lab/</loc>
   </url>
   
@@ -38,6 +34,10 @@
   
   <url>
     <loc>/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/</loc>
+  </url>
+  
+  <url>
+    <loc>/1/01/01/bootstrapping/</loc>
   </url>
   
   <url>

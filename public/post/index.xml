@@ -41,15 +41,6 @@ If you’re an engineer you might not be very familar with statistical inference
     </item>
     
     <item>
-      <title>02-Bootstrapping</title>
-      <link>/1/01/01/02-bootstrapping/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/02-bootstrapping/</guid>
-      <description>BootstrappingIn the real world, there are many physical and financial constraints on gathering a large data set from a population. Take for example the fMRI, an important tool used to collect brain imaging. It would be wonderful to perform scans on millions upon millions of people to understand brains networks that shed light on how the brain functions. But due to this tool being very expensive, it is unfeasible to scan millions of people.</description>
-    </item>
-    
-    <item>
       <title>04-Finishing/submitting a paper in the lab</title>
       <link>/1/01/01/04-finishing-submitting-a-paper-in-the-lab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,6 +68,15 @@ Say you encountered this in a statistics text: \[ x \sim N(0, 1) \] which just s
       <guid>/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/</guid>
       <description>How can we do data analysis when there’’s no “ground truth”?We often investigate novel imaging datasets with sophisticated algorithms. These might be something that we just developed or some technique that exists in the literature and has been applied in other domains. In any case, it’s something that isn’t trivial and will involved quite a bit of data processing or manipulation.
 You get a new result, now what? Maybe the result makes some sense, or maybe it’s not entirely clear.</description>
+    </item>
+    
+    <item>
+      <title>Bootstrapping</title>
+      <link>/1/01/01/bootstrapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/bootstrapping/</guid>
+      <description>BootstrappingIn the real world, there are many physical and financial constraints on gathering a large data set from a population. Take for example the fMRI, an important tool used to collect brain imaging. It would be wonderful to perform scans on millions upon millions of people to understand brains networks that shed light on how the brain functions. But due to this tool being very expensive, it is unfeasible to scan millions of people.</description>
     </item>
     
     <item>

@@ -1,5 +1,5 @@
 ---
-title: "02-Bootstrapping"
+title: "Bootstrapping"
 output: html_document
 ---
 
