@@ -30,17 +30,6 @@
     </item>
     
     <item>
-      <title>05-The beauty of programming via probability distributions (and estimating them)</title>
-      <link>/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/</guid>
-      <description>What does the title even mean?
-Say you encountered this in a statistics text: \[ x \sim N(0, 1) \] which just says that the random variable \(x\) is normally distributed with \(0\) mean and variance \(1\). If you write that in your program, \(x\) will automatically be distributed that way and draws from that distribution will be drawn when \(x\) is needed elsewhere.
-Here’s a more complex model: \[ z_{lk} = p_{l} + \epsilon_{l, k}, k = 1, 2, \cdots, n \] This is ugly, but \({lk}\) and \({l}\) are just subscripts, that is, indeces.</description>
-    </item>
-    
-    <item>
       <title>Applying the Central Limit Theorem</title>
       <link>/1/01/01/applying-the-central-limit-theorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -97,6 +86,17 @@ As I’ve discussed recently, from now on we need to archive data when a paper i
       <guid>/1/01/01/permutation-testing/</guid>
       <description>Similar to the standard independent or unpaired samples t-test, Permutation tests can be used to perform hypothesis testing to test whether the observed mean difference between two groups is statistically significant or not.
 For example, our research question is to test whether the salaries of male and female employees working at a big multinational company differ? For this, say we collected salary information from a random sample of \(30\) male and \(30\) female employees (total of \(60\) salaries).</description>
+    </item>
+    
+    <item>
+      <title>The beauty of programming via probability distributions (and estimating them)</title>
+      <link>/1/01/01/the-beauty-of-programming-via-probability-distributions-and-estimating-them/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/the-beauty-of-programming-via-probability-distributions-and-estimating-them/</guid>
+      <description>What does the title even mean?
+Say you encountered this in a statistics text: \[ x \sim N(0, 1) \] which just says that the random variable \(x\) is normally distributed with \(0\) mean and variance \(1\). If you write that in your program, \(x\) will automatically be distributed that way and draws from that distribution will be drawn when \(x\) is needed elsewhere.
+Here’s a more complex model: \[ z_{lk} = p_{l} + \epsilon_{l, k}, k = 1, 2, \cdots, n \] This is ugly, but \({lk}\) and \({l}\) are just subscripts, that is, indeces.</description>
     </item>
     
     <item>

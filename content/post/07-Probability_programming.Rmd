@@ -1,5 +1,5 @@
 ---
-title: "05-The beauty of programming via probability distributions (and estimating them)"
+title: "The beauty of programming via probability distributions (and estimating them)"
 output: html_document
 ---
 
