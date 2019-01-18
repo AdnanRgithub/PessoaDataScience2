@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Data Science</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Data Science</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>The magic of the central limit theorem:Sampling, sampling, sampling…As scientists we aim to understand the world around us, not just our immediate environments. In most cases, we don’t have access to populations, for one, because they are… large. For example, if you’re studying expectant mothers, it is virtually impossible to collect data from all of the expectant mothers from around the world. Therefore, we make do with random and representative samples of the population to make generalizations – that is, statements – about the population as a whole.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>Applying the Central Limit TheoremAn exampleAccording the National Center for Health Statistics, the distribution of serum cholesterol levels for 20 to 74-year-old males living in the United States has mean 211 mg/dl, and a standard deviation of 46 mg/dl. We are planning to collect a sample of 25 individuals and measure their cholesterol levels.
+We are interested in the following about the sample:
+What is the probability that our sample mean will be above a certain limit, say 230?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/</guid>
+      <description>Understanding data, overfitting, and p valuesconceptual statistics machine learning cross validation
+If you’re an engineer you might not be very familar with statistical inference and p values and the point of it all might be a little mysterious. At the same time, you might be very familiar with the issue of overfitting data and using something like training and test sets, cross-validation, and other schemes to investigate data. A neuroscientist will be less familar with those instead.</description>
+    </item>
+    
+    <item>
+      <title>02-Bootstrapping</title>
+      <link>/1/01/01/02-bootstrapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/02-bootstrapping/</guid>
+      <description>BootstrappingIn the real world, there are many physical and financial constraints on gathering a large data set from a population. Take for example the fMRI, an important tool used to collect brain imaging. It would be wonderful to perform scans on millions upon millions of people to understand brains networks that shed light on how the brain functions. But due to this tool being very expensive, it is unfeasible to scan millions of people.</description>
+    </item>
+    
+    <item>
+      <title>04-Finishing/submitting a paper in the lab</title>
+      <link>/1/01/01/04-finishing-submitting-a-paper-in-the-lab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/04-finishing-submitting-a-paper-in-the-lab/</guid>
+      <description>Finishing/submitting a paper in the lablab procedures etc
+As I’ve discussed recently, from now on we need to archive data when a paper is submitted for publication. At a minimum the following is required (and will be updated as we converge on a more established procedure): 1. File the latest version of the paper in bioRxiv or most relevant repository and make sure that the lab’s website has a link to that version; 2.</description>
+    </item>
+    
+    <item>
+      <title>05-The beauty of programming via probability distributions (and estimating them)</title>
+      <link>/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/</guid>
+      <description>The beauty of programming via probability distributions (and estimating them)What does the title even mean?
+Say you encountered this in a statistics text: \[ x \sim N(0, 1) \] which just says that the random variable \(x\) is normally distributed with \(0\) mean and variance \(1\). If you write that in your program, \(x\) will automatically be distributed that way and draws from that distribution will be drawn when \(x\) is needed elsewhere.</description>
+    </item>
+    
+    <item>
+      <title>Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</title>
+      <link>/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/</guid>
+      <description>How can we do data analysis when there’’s no “ground truth”?We often investigate novel imaging datasets with sophisticated algorithms. These might be something that we just developed or some technique that exists in the literature and has been applied in other domains. In any case, it’s something that isn’t trivial and will involved quite a bit of data processing or manipulation.
+You get a new result, now what? Maybe the result makes some sense, or maybe it’s not entirely clear.</description>
+    </item>
+    
+    <item>
+      <title>Multiple regression</title>
+      <link>/1/01/01/multiple-regression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/multiple-regression/</guid>
+      <description>Multiple regression as you never seen it before. Or the case for the importance of the assumption of independence.House price predictionImagine the following scenario, you work for a real estate agency and new house has just been made available on the market, how would you go about naming the price for that house? Luckily in this scenario you are not just any other real estate, but a statistics loving, extra diligent one.</description>
+    </item>
+    
+    <item>
+      <title>Permutation Testing</title>
+      <link>/1/01/01/permutation-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/permutation-testing/</guid>
+      <description>Permutation TestingSimilar to the standard independent or unpaired samples t-test, Permutation tests can be used to perform hypothesis testing to test whether the observed mean difference between two groups is statistically significant or not.
+For example, our research question is to test whether the salaries of male and female employees working at a big multinational company differ? For this, say we collected salary information from a random sample of \(30\) male and \(30\) female employees (total of \(60\) salaries).</description>
+    </item>
+    
+  </channel>
+</rss>
