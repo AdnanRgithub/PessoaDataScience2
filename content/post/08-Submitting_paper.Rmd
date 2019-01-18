@@ -3,7 +3,6 @@ title: "Finishing/submitting a paper in the lab"
 output: html_document
 ---
 
-# Finishing/submitting a paper in the lab
 
 `lab procedures` `etc`
 

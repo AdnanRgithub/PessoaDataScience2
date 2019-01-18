@@ -3,7 +3,6 @@ title: "The magic of the central limit theorem"
 output: html_document
 ---
 
-# The magic of the central limit theorem:  
 ## Sampling, sampling, sampling...
 
 As scientists we aim to understand the world around us, not just our immediate environments. In most cases, we don't have access to **populations**, for one, because they are... large. For example, if you're studying expectant mothers, it is virtually impossible to collect data from all of the expectant mothers from around the world. Therefore, we make do with random and representative <u>samples</u> of the population to make generalizations -- that is, statements -- about the population as a whole.  
