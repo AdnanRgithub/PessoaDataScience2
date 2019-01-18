@@ -14,10 +14,10 @@ ignoreFiles = []
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
+    url = "https://github.com/AdnanRgithub/PessoaDataScience2"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
+    name = "Lab of Cognition & Emotion"
+    url = "https://lce.umd.edu"
 
 [params]
     description = "A website built through Hugo and blogdown."
