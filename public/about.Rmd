@@ -1,6 +1,6 @@
 ---
-title: "About"
-date: '2016-05-05T21:48:51-07:00'
+date: "2016-05-05T21:48:51-07:00"
+title: About
 ---
 
 This is a website overseen by Dr. Luiz Pessoa. It will discuss concepts in Data Science, Statistics, and fMRI related Research.
