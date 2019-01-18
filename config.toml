@@ -20,7 +20,7 @@ ignoreFiles = []
     url = "https://LCE.umd.edu"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "Overseen by Dr. Luiz Pessoa."
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
