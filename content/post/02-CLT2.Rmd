@@ -1,4 +1,9 @@
-# Applying the Central Limit Theorem
+---
+title: "Applying the Central Limit Theorem"
+output: html_document
+---
+
+
 
 ## An example
 

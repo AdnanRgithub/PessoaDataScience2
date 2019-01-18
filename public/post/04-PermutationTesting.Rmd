@@ -3,7 +3,6 @@ title: "Permutation Testing"
 output: html_document
 ---
 
-# Permutation Testing
 
 Similar to the standard *independent* or *unpaired samples* *t*-test, *Permutation tests* can be used to perform *hypothesis testing* to test whether the observed mean difference between two groups is statistically significant or not.
 

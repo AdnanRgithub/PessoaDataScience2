@@ -4,7 +4,6 @@ output: html_document
 ---
 
 
-# The beauty of programming via probability distributions (and estimating them)
 
 What does the title even mean?
 

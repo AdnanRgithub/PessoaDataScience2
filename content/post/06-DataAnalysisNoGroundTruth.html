@@ -5,8 +5,6 @@ output: html_document
 
 
 
-<div id="how-can-we-do-data-analysis-when-theres-no-ground-truth" class="section level1">
-<h1>How can we do data analysis when there’’s no “ground truth”?</h1>
 <p>We often investigate novel imaging datasets with sophisticated algorithms. These might be something that we just developed or some technique that exists in the literature and has been applied in other domains. In any case, it’s something that isn’t trivial and will involved quite a bit of data processing or manipulation.</p>
 <p>You get a new result, now what? Maybe the result makes some sense, or maybe it’s not entirely clear. Can you trust the results? If it the results make sense, should you trust the results?</p>
 <p>The answer is <strong>no, don’t trust it</strong> – yet.</p>
@@ -18,4 +16,3 @@ output: html_document
 <p>A lot of research is done – obviously – without any <strong>ground truth</strong>. That is an immense challenge and even very skilled people technically struggle when studying new problems. That’s because both the data <strong>and</strong> their methods are not fully understood. This is a perfect recipe for things to go wrong, at least partly wrong. So one has to incrementally <strong>bootstrap</strong> one’s understanding of both the data and the method along the ways outlined here.</p>
 <p>Obviously, the example above is arbitrary (not entirely by the way). Maybe you are studying <code>HCP data</code> for the first time yourself with your method. So pick something simpler than <code>HCP</code> and apply the logic above. If you don’t know what data to pick, or it’s not obvious what could be used, an excellent choice is to <strong>create synthetic data</strong> yourself. You should contruct data with certain properties and understand how your method/measures behaves. Again, think of the distribution of results that you get; how do they vary? Synthetic data is seldom used, but it’s hugely useful. So think of how to structure your workflow so as to incorporate that in a more seamless manner.</p>
 <p>I’m going to stop here. There’s a lot more to discuss about this, but I wanted to post this simple version first. Maybe one day I’ll extend it based on questions or suggestions.</p>
-</div>

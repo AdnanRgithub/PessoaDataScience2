@@ -34,8 +34,6 @@
 <main><h1>Bootstrapping</h1>
 
 
-<div id="bootstrapping" class="section level1">
-<h1>Bootstrapping</h1>
 <p>In the real world, there are many physical and financial constraints on gathering a large data set from a population. Take for example the fMRI, an important tool used to collect brain imaging. It would be wonderful to perform scans on millions upon millions of people to understand brains networks that shed light on how the brain functions. But due to this tool being very expensive, it is unfeasible to scan millions of people. So what do researchers do? Since there is a limited funding, researchers collect data from a small number of people compared to the population. A typical fMRI study includes <span class="math inline">\(30-60\)</span> participants and when we compare this number with <span class="math inline">\(7\)</span> billion people, it is minuscule. When we can only scan about <span class="math inline">\(60\)</span> people, we need a way to infer something about a population from the sample we gathered. This is where bootstrapping comes in.</p>
 <p><strong>Bootstrapping</strong> is re-sampling with replacement from one sample that was gathered from a population. The basic idea is that inference about a population from sample data can be modeled by re-sampling the sample data and performing inference about a sample from re-sampled data. We know nothing about the population because all we have is the sample data.</p>
 <p>A good thing about bootstrapping is its incredible simplicity. It is at its core the same thing as <strong>Central limit Theorem</strong>. In Central Limit Theorem, where the means of the multiple samples from a population is plotted on a distribution or sample distribution of sample means. In Bootstrapping, the bootstrap sample is drawn repeatedly with replacement from the original sample. The original sample stands for the population. The mean of these bootstrap samples is plotted, which becomes <strong>bootstrap distribution</strong>.</p>
@@ -43,9 +41,8 @@
 <p>Bootstrap re-sampling is not a substitution of getting a “good” sample. We can go back to the rabbits example. Lets say that we had not gathered the original sample independently. Instead of randomly selecting rabbits, we had only gone to one burrow and gathered sample from a single burrow which only contained <span class="math inline">\(10\)</span> baby rabbits. The weight data would appear as <span class="math inline">\([1,1,1,1,1,2,1,1,2,1]\)</span>. The mean would be <span class="math inline">\(1.2\)</span>. This is not random sampling and we can run as many bootstrapping re-sampling as we want but it will not magically bring us any closer to the population mean weight of rabbits.</p>
 <hr />
 <p>Posted by Adnan Rashid</p>
-</div>
 <div class="edit-meta">Last updated on 1 Jan 0001 / Published on 1 Jan 0001<br></div><nav class="pagination"><a class="nav nav-prev" href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/" title="Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a>
-<a class="nav nav-next" href="/1/01/01/multiple-regression/" title="Multiple regression">Next - Multiple regression <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<a class="nav nav-next" href="/1/01/01/finishing-submitting-a-paper-in-the-lab/" title="Finishing/submitting a paper in the lab">Next - Finishing/submitting a paper in the lab <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -55,15 +52,15 @@
 
 <li class="parent"><a href="/post/">Posts</a>
 <ul class="sub-menu">
-<li class=""><a href="/1/01/01/"></a></li>
-<li class=""><a href="/1/01/01/"></a></li>
-<li class=""><a href="/1/01/01/"></a></li>
-<li class=""><a href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/">04-Finishing/submitting a paper in the lab</a></li>
 <li class=""><a href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">05-The beauty of programming via probability distributions (and estimating them)</a></li>
+<li class=""><a href="/1/01/01/applying-the-central-limit-theorem/">Applying the Central Limit Theorem</a></li>
 <li class=""><a href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a></li>
 <li class="active"><a href="/1/01/01/bootstrapping/">Bootstrapping</a></li>
+<li class=""><a href="/1/01/01/finishing-submitting-a-paper-in-the-lab/">Finishing/submitting a paper in the lab</a></li>
 <li class=""><a href="/1/01/01/multiple-regression/">Multiple regression</a></li>
 <li class=""><a href="/1/01/01/permutation-testing/">Permutation Testing</a></li>
+<li class=""><a href="/1/01/01/the-magic-of-the-central-limit-theorem/">The magic of the central limit theorem</a></li>
+<li class=""><a href="/1/01/01/understanding-data-overfitting-and-p-values/">Understanding data, overfitting, and p values</a></li>
 </ul>
   
 </li>

@@ -2,9 +2,9 @@
 title: "Multiple regression"
 output: html_document
 ---
-# Multiple regression as you never seen it before. Or the case for the importance of the assumption of independence.
+## Multiple regression as you never seen it before. Or the case for the importance of the assumption of independence.
  
-## House price prediction
+### House price prediction
 
 Imagine the following scenario, you work for a real estate agency and new house has just been made available on the market, how would you go about naming the price for that house? Luckily in this scenario you are not just any other real estate, but a statistics loving, extra diligent one. As such you have saved on record all the information about houses sold in your area for the past $10$ years. In your archives you have recorded the size of each house (in square feet), the number of bedrooms it has, the average income in the respective neighborhood, a subjective rating of how appealing the house is, the year in which it was sold, and how much it was sold for. How can you use all that information from your archives to best predict the value of the new house?
 

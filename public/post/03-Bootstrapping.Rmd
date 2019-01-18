@@ -3,7 +3,6 @@ title: "Bootstrapping"
 output: html_document
 ---
 
-# Bootstrapping
 
 In the real world, there are many physical and financial constraints on gathering a large data set from a population. Take for example the fMRI, an important tool used to collect brain imaging. It would be wonderful to perform scans on millions upon millions of people to understand brains networks that shed light on how the brain functions. But due to this tool being very expensive, it is unfeasible to scan millions of people. So what do researchers do? Since there is a limited funding, researchers collect data from a small number of people compared to the population. A typical fMRI study includes $30-60$ participants and when we compare this number with $7$ billion people, it is minuscule. When we can only scan about $60$ people, we need a way to infer something about a population from the sample we gathered. This is where bootstrapping comes in.
 

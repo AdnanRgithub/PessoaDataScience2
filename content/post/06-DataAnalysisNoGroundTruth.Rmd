@@ -3,8 +3,6 @@ title: 'Blog: How can we do data analysis when there''s no "ground truth"?'
 output: html_document
 ---
 
-# How can we do data analysis when there''s no "ground truth"?
-
 We often investigate novel imaging datasets with sophisticated algorithms. These might be something that we just developed or some technique that exists in the literature and has been applied in other domains. In any case, it's something that isn't trivial and will involved quite a bit of data processing or manipulation.
 
 You get a new result, now what? Maybe the result makes some sense, or maybe it's not entirely clear. Can you trust the results? If it the results make sense, should you trust the results?
