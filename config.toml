@@ -17,7 +17,7 @@ ignoreFiles = []
     url = "https://github.com/AdnanRgithub/PessoaDataScience2"
 [[menu.main]]
     name = "Lab of Cognition & Emotion"
-    url = "https://lce.umd.edu"
+    url = "https://LCE.umd.edu"
 
 [params]
     description = "A website built through Hugo and blogdown."
