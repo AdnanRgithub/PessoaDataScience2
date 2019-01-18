@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>05-The beauty of programming via probability distributions (and estimating them) - Data Science</title>
+<meta name="description" content="Overseen by Dr. Luiz Pessoa.">
+<meta name="generator" content="Hugo 0.53" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="/js/functions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/jquery.backtothetop/jquery.backtothetop.min.js"></script></head>
+<body>
+<div class="container"><header>
+<h1>Data Science</h1>
+
+<p class="description">Overseen by Dr. Luiz Pessoa.</p>
+
+</header>
+<div class="menu">
+<nav>
+<ul>
+<li><a href="/about/">About</a></li>
+<li><a href="https://github.com/AdnanRgithub/PessoaDataScience2">GitHub</a></li>
+<li><a href="https://LCE.umd.edu">Lab of Cognition &amp; Emotion</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>05-The beauty of programming via probability distributions (and estimating them)</h1>
+
+
+<div id="the-beauty-of-programming-via-probability-distributions-and-estimating-them" class="section level1">
+<h1>The beauty of programming via probability distributions (and estimating them)</h1>
+<p>What does the title even mean?</p>
+<p>Say you encountered this in a statistics text: <span class="math display">\[ x \sim N(0, 1) \]</span> which just says that the random variable <span class="math inline">\(x\)</span> is normally distributed with <span class="math inline">\(0\)</span> mean and variance <span class="math inline">\(1\)</span>. If you write that in your program, <span class="math inline">\(x\)</span> will automatically be distributed that way and draws from that distribution will be drawn when <span class="math inline">\(x\)</span> is needed <strong>elsewhere</strong>.</p>
+<p>Here’s a more complex model: <span class="math display">\[ z_{lk} = p_{l} + \epsilon_{l, k}, k = 1, 2, \cdots, n \]</span> This is ugly, but <span class="math inline">\({lk}\)</span> and <span class="math inline">\({l}\)</span> are just subscripts, that is, indeces. What does this mean? The varible <span class="math inline">\(z\)</span> is estimated as an <strong>additive</strong> contribution of a population effect of the variable that you are interested in <span class="math inline">\(p\)</span> (for example, the experimental condition that you manipulated <span class="math inline">\(l\)</span>; “ell”) and <span class="math inline">\(\epsilon_{lk}\)</span> is the deviation (or effect) of subject <span class="math inline">\(k\)</span> on condition <span class="math inline">\(l\)</span>.</p>
+<p>What does this mean? If you know what the Stroop effect is: <span class="math inline">\(p_l\)</span> could be the contribution (effect) of an incongruent condition. And <span class="math inline">\(\epsilon_{l,k}\)</span> the contribution (effect) of subject <span class="math inline">\(k\)</span>, that is, sort of the average response time across all conditions for that person (if I’m fast in general, or slow in general). So what the experimental condition (incongruent trials) does is a <strong>deviation</strong> from my average reaction time based on the condition.</p>
+<p>By including both a <strong>fixed effect p</strong> (the conditions of your experiment; they are fixed, right?) and the <strong>random effect</strong> (the one that you draw randomly), that is, participants, you have a <strong>mixed-effcts model</strong> And you’re done! Or not far from it actually (so close that it’s scary).</p>
+<p>If you don’t know what the Stroop effect is, it doesn’t matter (but look it up). The model is general and that’s what math is for, right?</p>
+<p>Well, this was a little longer than I thought.</p>
+</div>
+<div class="edit-meta">Last updated on 1 Jan 0001 / Published on 1 Jan 0001<br></div><nav class="pagination"><a class="nav nav-prev" href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/" title="04-Finishing/submitting a paper in the lab"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - 04-Finishing/submitting a paper in the lab</a>
+<a class="nav nav-next" href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/" title="Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?">Next - Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;? <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+<nav>
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class="parent"><a href="/post/">Posts</a>
+<ul class="sub-menu">
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/">04-Finishing/submitting a paper in the lab</a></li>
+<li class="active"><a href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">05-The beauty of programming via probability distributions (and estimating them)</a></li>
+<li class=""><a href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a></li>
+<li class=""><a href="/1/01/01/bootstrapping/">Bootstrapping</a></li>
+<li class=""><a href="/1/01/01/multiple-regression/">Multiple regression</a></li>
+<li class=""><a href="/1/01/01/permutation-testing/">Permutation Testing</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

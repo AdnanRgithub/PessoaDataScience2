@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Permutation Testing - Data Science</title>
+<meta name="description" content="Overseen by Dr. Luiz Pessoa.">
+<meta name="generator" content="Hugo 0.53" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="/1/01/01/permutation-testing/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="/js/functions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/jquery.backtothetop/jquery.backtothetop.min.js"></script></head>
+<body>
+<div class="container"><header>
+<h1>Data Science</h1>
+
+<p class="description">Overseen by Dr. Luiz Pessoa.</p>
+
+</header>
+<div class="menu">
+<nav>
+<ul>
+<li><a href="/about/">About</a></li>
+<li><a href="https://github.com/AdnanRgithub/PessoaDataScience2">GitHub</a></li>
+<li><a href="https://LCE.umd.edu">Lab of Cognition &amp; Emotion</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Permutation Testing</h1>
+
+
+<div id="permutation-testing" class="section level1">
+<h1>Permutation Testing</h1>
+<p>Similar to the standard <em>independent</em> or <em>unpaired samples</em> <em>t</em>-test, <em>Permutation tests</em> can be used to perform <em>hypothesis testing</em> to test whether the observed mean difference between two groups is statistically significant or not.</p>
+<p>For example, our research question is to test whether the salaries of male and female employees working at a big multinational company differ? For this, say we collected salary information from a random sample of <span class="math inline">\(30\)</span> male and <span class="math inline">\(30\)</span> female employees (total of <span class="math inline">\(60\)</span> salaries). If we would like to use the permutation testing to test whether the salaries of male and female employees are statistically different, the following steps are involved:</p>
+<ol style="list-style-type: decimal">
+<li>Calculate the mean salary difference between male and female sample groups. This is the sample mean difference.</li>
+<li>Build the permutation distribution for the mean salary difference based on large number of permutation resamples generated <em>without replacement</em>. In order to perform hypothesis testing, we should resample in a manner that is consistent with the <em>null hypothesis</em> (and with the study design). In this case, null hypothesis is that there is no salary difference between male and female populations which implies that gender doesn’t play a role in employee’s salaries. So, to create a permutation resample, we randomly assign <span class="math inline">\(30\)</span> out of <span class="math inline">\(60\)</span> salaries to male group and remaining <span class="math inline">\(30\)</span> salaries to female group. Then, we calculate the mean salary difference between two groups for this permutation resample. We repeat this resampling procedure <em>without replacement</em> thousands of times and calculate mean salary difference for each permutation resample. Finally, plotting the distribution of the mean salary difference of all permutation resamples gives us the sampling distribution under the null hypothesis.</li>
+<li>Calculate the <em>p</em>-value by finding the observed sample mean difference on the permutation distribution. In other words, find the proportion of samples in the permutation distribution that are at or more extreme than the sample mean difference calculated in step <span class="math inline">\(1\)</span>. If the observed <em>p</em>-value is low (i.e., if the sample mean difference fell on tails of the permutation distribution), then we can infer that the observed mean salary difference is less likely happened by chance and hence conclude that the population means of male and female employee salaries are statistically different.</li>
+</ol>
+<p>Compared to the standard <em>t</em> test, permutation tests are accurate even when the population distributions are not normal. However, under the null hypothesis, permutation tests require the two populations to have identical distributions with same means, same shapes and same variability <span style="color:red">(how can we test this?)</span>.</p>
+<hr />
+<p>Posted by Srikanth Padmala.</p>
+</div>
+<div class="edit-meta">Last updated on 1 Jan 0001 / Published on 1 Jan 0001<br></div><nav class="pagination"><a class="nav nav-prev" href="/1/01/01/multiple-regression/" title="Multiple regression"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Multiple regression</a>
+<a class="nav nav-next" href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/" title="04-Finishing/submitting a paper in the lab">Next - 04-Finishing/submitting a paper in the lab <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+<nav>
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class="parent"><a href="/post/">Posts</a>
+<ul class="sub-menu">
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/">04-Finishing/submitting a paper in the lab</a></li>
+<li class=""><a href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">05-The beauty of programming via probability distributions (and estimating them)</a></li>
+<li class=""><a href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a></li>
+<li class=""><a href="/1/01/01/bootstrapping/">Bootstrapping</a></li>
+<li class=""><a href="/1/01/01/multiple-regression/">Multiple regression</a></li>
+<li class="active"><a href="/1/01/01/permutation-testing/">Permutation Testing</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>

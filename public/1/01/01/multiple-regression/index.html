@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Multiple regression - Data Science</title>
+<meta name="description" content="Overseen by Dr. Luiz Pessoa.">
+<meta name="generator" content="Hugo 0.53" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="/1/01/01/multiple-regression/">
+<link rel="stylesheet" href="/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="/js/functions.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="/js/jquery.backtothetop/jquery.backtothetop.min.js"></script></head>
+<body>
+<div class="container"><header>
+<h1>Data Science</h1>
+
+<p class="description">Overseen by Dr. Luiz Pessoa.</p>
+
+</header>
+<div class="menu">
+<nav>
+<ul>
+<li><a href="/about/">About</a></li>
+<li><a href="https://github.com/AdnanRgithub/PessoaDataScience2">GitHub</a></li>
+<li><a href="https://LCE.umd.edu">Lab of Cognition &amp; Emotion</a></li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Multiple regression</h1>
+
+
+<div id="multiple-regression-as-you-never-seen-it-before.-or-the-case-for-the-importance-of-the-assumption-of-independence." class="section level1">
+<h1>Multiple regression as you never seen it before. Or the case for the importance of the assumption of independence.</h1>
+<div id="house-price-prediction" class="section level2">
+<h2>House price prediction</h2>
+<p>Imagine the following scenario, you work for a real estate agency and new house has just been made available on the market, how would you go about naming the price for that house? Luckily in this scenario you are not just any other real estate, but a statistics loving, extra diligent one. As such you have saved on record all the information about houses sold in your area for the past <span class="math inline">\(10\)</span> years. In your archives you have recorded the size of each house (in square feet), the number of bedrooms it has, the average income in the respective neighborhood, a subjective rating of how appealing the house is, the year in which it was sold, and how much it was sold for. How can you use all that information from your archives to best predict the value of the new house?</p>
+<table style="width:100%;">
+<colgroup>
+<col width="8%" />
+<col width="11%" />
+<col width="27%" />
+<col width="7%" />
+<col width="5%" />
+<col width="13%" />
+<col width="2%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Price(Y)</th>
+<th># of bedrooms</th>
+<th>Average income of the neighborhood</th>
+<th>Rating</th>
+<th>Year</th>
+<th>Area/sqf</th>
+<th>…</th>
+<th>House tax rate of this region</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>190,239</td>
+<td>4</td>
+<td>40,000</td>
+<td>2.7</td>
+<td>2012</td>
+<td>2,642</td>
+<td>…</td>
+<td>1.08%</td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td>230,232</td>
+<td>3</td>
+<td>63,298</td>
+<td>4.8</td>
+<td>2016</td>
+<td>1,324</td>
+<td>…</td>
+<td>2.01%</td>
+</tr>
+</tbody>
+</table>
+<p>This problem could be mathematically formulated as following problem:</p>
+<blockquote>
+<p>Given a set of variables <span class="math inline">\(X = (x_1, x_2, \cdots , x_n)\)</span> and another variable <span class="math inline">\(Y\)</span>, try to find the “relationship” between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+</blockquote>
+<p>In the house prediction problem above, <span class="math inline">\(x1\)</span> could be total number of bedrooms, <span class="math inline">\(x2\)</span> could be the average income of the neighborhood, xn could be house tax rate of this region and <span class="math inline">\(Y\)</span> could be the deal price at a certain year. Since we want to predict the price of a house as precise as possible, the “relationship” here could be simply interpreted as to find out the smallest difference between the predicted price and the deal price. So we can further formularized the above problem as:</p>
+<blockquote>
+<p>Given a set of variables <span class="math inline">\(X = [x1, x2, \cdots , xn]\)</span> and another variable <span class="math inline">\(Y\)</span>, try to find a function <span class="math inline">\(f:\mathcal{R}^n \rightarrow \mathcal{R}\)</span> s.t “difference” between <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(Y\)</span> is minimized.</p>
+</blockquote>
+<p>Here, a problem might arise, how can one choose a proper function <span class="math inline">\(f(X)\)</span> ? A naive thought is to simply assume a linear relationship between <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>, i.e.</p>
+<p><span class="math display">\[ f(X)=\sum{}{}\alpha_i x_i+ \alpha_0 \]</span> This linear assumption, even though simple enough, turns out to be very powerful and effective in solving many problems. Given this assumption, now the problem becomes:</p>
+<blockquote>
+<p>Given a set of variables <span class="math inline">\(X = [x1, x2, \cdots , xn]\)</span> and another variable <span class="math inline">\(Y\)</span>, use data collected for variable <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> to determine a set of values of coefficients <span class="math inline">\(\alpha_0, \alpha_1, \cdots , \alpha_n\)</span> s.t “difference” between <span class="math inline">\(f(X)\)</span> and <span class="math inline">\(Y\)</span> is minimized.</p>
+</blockquote>
+<p>The problem we derived from the perspective of optimization is categorized as least-squares problem:</p>
+<p><span class="math display">\[\underset{x}{min}\quad f_0(x)=\Vert Ax- b\Vert_2^2\]</span></p>
+<p>It could be solved analytically with a solution of <span class="math inline">\(x= (A^{\top}A)^{-1} A^{\top} b\)</span>. Also there are many efficient algorithms available to avoid the expensive computation of inverse of matrix.</p>
+<p>Most people stop their analysis here when they happily got their final results: a set of coefficient values. Some might even use software packages as some magical black box that could produce a set of coefficient that could linearly fit the data.</p>
+<p>Known as multiple regression, statisticians would often use the aforementioned analysis to learn about the relationship between several independent or predictor variables and a dependent or criterion variable. So, if we go back to our house price prediction example. The relationships between the different predicting variables and the criterion can be described like this:</p>
+<p><span class="math display">\[Price(Y) = 4.7 * \text{# of bedrooms} + 0.27* \text{Average income of the neighborhood} + 0.46 * \text{Rating}\\ + 0.2 * \text{Year} + 0.1 * \text{Area} + 0.24 * \text{House tax rate of this region}\]</span></p>
+<p>What this equation is telling us is that when all other variables are being held as consents, every <span class="math inline">\(4.7\)</span> rooms added to the house results in a one-unit change in price of the house; let us say an added <span class="math inline">\(100,000\)</span> to the house total price.</p>
+<p>Seeing this equation, our agent might reach the conclusion that due to the large coefficient the factor most significantly effecting the house prices in the area is the number of rooms that they have (when compared to the tiny <span class="math inline">\(0.1\)</span> coefficient of the house area for example). The effect of number of room is so central that for an increase of <span class="math inline">\(4.7\)</span> rooms drives the price of the house by another <span class="math inline">\(100,000\$\)</span>.</p>
+<p>This conclusion would be very wrong, and for a couple of reasons, we will call them the problems of collinearity and scaling. A house’s price is mainly determined by number of bedrooms but not determined by the house area? Who will design a house with many bedrooms but small area? In fact, how can the numbers of room grow without it affecting the area of the house? Can infect one factor in our equation change without it affecting other factors?</p>
+<p>Of the two problems, that of scaling is simpler, and easier to resolve. A factor’s coefficient is a function of that factor’s range, so for large ranged variables the coefficient before it is likely to get a small value. That small value however, does NOT indicate that it has less impact in determining the value of <span class="math inline">\(Y\)</span>. To avoid this problem, most data scientists tend to normalize data before conducting the regression analysis so that values of variable are in similar range.</p>
+<p>The other problem, collinearity, refers to a situation when one of our predictor variables can be almost entirely predicted by one or a few of the other predicting variables. In our example, it is easy to see how, in many cases, the number of room it has could predict a house’s area. Similarly, if that region house taxation were based on its square feet size, the variable area would entirely predict that of tax. When two or more variables are highly correlated, they are in affect explaining the same phenomenon, and thus redundant. It is therefore a good practice to test for collinearity between the variables prior to designing the regression model.</p>
+<p>However, even if variables are not entirely collinear, that does not mean we can treat them as orthogonal. If we go back to the verbal explanation of the regression equation, it is important to pay careful attention to the following part “when all other variables are being held as consents…” it means that we can refer to the unique effect a single variable if, and only if, changing that variable has no effect on the other variables. If it does, the equation should be treated as a whole.</p>
+</div>
+</div>
+<div class="edit-meta">Last updated on 1 Jan 0001 / Published on 1 Jan 0001<br></div><nav class="pagination"><a class="nav nav-prev" href="/1/01/01/bootstrapping/" title="Bootstrapping"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Bootstrapping</a>
+<a class="nav nav-next" href="/1/01/01/permutation-testing/" title="Permutation Testing">Next - Permutation Testing <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+<nav>
+<ul>
+<li class=""><a href="/">Home</a></li>
+
+<li class="parent"><a href="/post/">Posts</a>
+<ul class="sub-menu">
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/"></a></li>
+<li class=""><a href="/1/01/01/04-finishing-submitting-a-paper-in-the-lab/">04-Finishing/submitting a paper in the lab</a></li>
+<li class=""><a href="/1/01/01/05-the-beauty-of-programming-via-probability-distributions-and-estimating-them/">05-The beauty of programming via probability distributions (and estimating them)</a></li>
+<li class=""><a href="/1/01/01/blog-how-can-we-do-data-analysis-when-theres-no-ground-truth/">Blog: How can we do data analysis when there&#39;s no &#34;ground truth&#34;?</a></li>
+<li class=""><a href="/1/01/01/bootstrapping/">Bootstrapping</a></li>
+<li class="active"><a href="/1/01/01/multiple-regression/">Multiple regression</a></li>
+<li class=""><a href="/1/01/01/permutation-testing/">Permutation Testing</a></li>
+</ul>
+  
+</li>
+</ul>
+</nav>
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
